@@ -1,0 +1,350 @@
+:root {
+    --pocet_clanok: 6;
+    --pocet_clanok_v_slider: calc(var(--pocet_clanok) + 1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333333;
+    font-family: "Ribeye Marrow", serif;/*Comic Sans MS // Footlight MT Light // Calibri  */
+}
+body {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+/* #loader {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    opacity: 1;
+    background-color: black;
+    z-index: 1;
+} */
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0,0,0,0) 50%, rgba(0,0,0,0.5859593837535014) 76%, rgba(0,0,0,0.7344187675070029) 100%), url(obrazky/uvodna.png);     
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    width: 100%;
+    height: 10rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.animacia {
+    animation: up_down 5s infinite ease-in-out;
+}
+.font {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+.radius {
+    border-radius: 1rem;
+}
+.pozicie {
+    width: 15rem;
+    height: 4rem;
+}
+nav .left{
+    rotate: -5deg;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+nav .middle{
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+nav .right{
+    rotate: 5deg;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+nav .right:hover,.left:hover,.middle:hover{
+    letter-spacing: 0.1rem;
+    background-color: hsl(0, 0%, 40%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(255, 255, 255) 0px 7px 29px 0px;
+}
+nav .right:active,.left:active,.middle:active {
+    letter-spacing: 0.1rem;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px;
+    transition: 100ms;
+}
+.skrasli {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.kde_bola {
+    width: 100%;
+    height: 8rem;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.krajiny {
+    width: 100%;
+    height: auto;
+}
+.tvar {
+    width: 100%;
+    height: 15rem;
+    border: 1px #333333 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* .tvar span {
+    font-size: 2rem;
+    color: white;
+}
+.slovensko {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.48511904761904767) 0%, rgba(0,0,0,0.46271008403361347) 100%), url(obrazky/IMG_4917.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s ease;
+}
+.slovensko:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+
+.francuzko {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.48511904761904767) 0%, rgba(0,0,0,0.46271008403361347) 100%), url(obrazky/IMG_4887.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s ease;
+}
+.francuzko:hover {
+    transform: scale(1.1);
+}
+
+
+.grecko {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.48511904761904767) 0%, rgba(0,0,0,0.46271008403361347) 100%), url(obrazky/IMG_0424.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s ease;
+}
+.grecko:hover {
+    transform: scale(1.1);
+}
+
+
+
+.rakusko {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.48511904761904767) 0%, rgba(0,0,0,0.46271008403361347) 100%), url(obrazky/IMG_8079.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s ease;
+}
+.rakusko:hover {
+    transform: scale(1.1);
+}
+
+
+
+.cesko {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.48511904761904767) 0%, rgba(0,0,0,0.46271008403361347) 100%), url(obrazky/IMG_5638.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s ease;
+}
+.cesko:hover {
+    transform: scale(1.1);
+}
+
+
+
+.anglicko {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.48511904761904767) 0%, rgba(0,0,0,0.46271008403361347) 100%), url(obrazky/IMG_4347.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.2s ease;
+}
+.anglicko:hover {
+    transform: scale(1.1);
+} */
+
+
+
+
+
+
+
+@keyframes up_down {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+}
+
+
+
+
+
+.holder {
+    width: 100vw;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+.holder .nav-botky {
+    width: 100%;
+    height: 5rem;
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-inline: 20rem;
+}
+.holder .nav-botky .botka {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    bottom: 2rem;
+}
+.holder .botka:hover {
+    cursor: pointer;
+} 
+
+.hibadlo{
+    height: 100%;
+    width: calc(100% * var(--pocet_clanok_v_slider));
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.5s ease;
+    transform: translateX(calc(var(--pocet_clanok_v_slider)));
+}
+.index1 {
+    z-index: 1;
+    color: #fff;
+}
+.maly_text {
+    font-size: 1rem;
+    width: 50%;
+}
+
+
+.clanok {
+    height: 100%;
+    width: calc(100% / var(--pocet_clanok_v_slider));
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* temp */  
+    text-align: center;
+    font-size: 10rem;
+}
+.clanok img {
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    width: calc(100% / var(--pocet_clanok_v_slider));
+    filter: brightness(50%);
+    transition: all 0.5s ease;
+}
+/* .clanok img:hover {
+    transform: scale(1.2);
+} */
+.clanok a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    border: 1px #fff solid;
+    border-radius: 5px;
+    width: 14rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+} 
+.clanok a:hover {
+    background-color: rgba(0,0,0,.5);
+}
+
+/* .clanok:hover {
+    transform: scale(1.1);
+} */
+
+
+.najnovsie_tripy {
+    width: 100%;
+    height: auto;
+}
+.najnovsie_tripy_clanky{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.najnovsie_tripy_clanky .imgE{
+    width: 80%;
+    height: auto;
+}
+.najnovsie_tripy_clanky .imgE img{
+    width: 80vw;
+}
+.najnovsie_tripy_clanky .pisanie{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.najnovsie_tripy_clanky .pisanie span{
+    font-size: 3rem;
+}
+.najnovsie_tripy_clanky .pisanie p{
+    font-size: 1.5rem;
+    padding-inline: 15rem;
+    margin-block: 2rem;
+}
+.najnovsie_tripy_clanky .pisanie button{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
