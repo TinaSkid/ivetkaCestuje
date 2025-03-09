@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/style.css">
+   <link href="https://fonts.googleapis.com/css2?family=Ribeye+Marrow&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="teste.txt">
+   <title>IVETU CESTOVATEL MORE</title>
+</head>
+<body>
+    <header class="w-100">
+        <img class="w-100 z-i-0" src="assets/obrazky/uvodna.png" alt="">
+    </header>
+    <button class="menu-b-t" onclick="M_toggle()">☰ Menu</button>
+    <nav class="menu" id="T-menu">
+        <button onclick="presunutie(1)" id="o_mne" class="b-t left b-t-m">O MNE</button>
+        <button onclick="presunutie(2)" id="vsetky_tripy" class="b-t b-t-m" >VŠETKY CESTY</button>
+        <button onclick="presunutie(3)" id="najnovsie_tripy" class="b-t b-t-m">NAJNOVŠIE CESTY</button>
+        <button onclick="presunutie(4)" id="naj_cesty" class="b-t right b-t-m">NAJLEPŠIE CESTY</button>
+    </nav>
+    <div class="bo-box dis-jus-alig-flex">
+        <div class="n-d-t dis-jus-alig-flex">
+            <span id="n-d-h" class="V-text">Najlepšie destinácie</span>
+        </div>
+        <!-- ||||||||||||||||||| slider |||||||||||||||||||| -->
+        <div class="holder">
+            <div class="nav-botky">
+                <button onclick="preklik(1)" class="botka b-0"></button>
+                <button onclick="preklik(2)" class="botka b-1"></button>
+                <button onclick="preklik(3)" class="botka b-2"></button>
+                <button onclick="preklik(4)" class="botka b-3"></button>
+                <button onclick="preklik(5)" class="botka b-4"></button>
+                <button onclick="preklik(6)" class="botka b-5"></button>
+            </div>
+            <div class="hibadlo">
+                <div class="clanok dis-jus-alig-flex">
+                    <img class="img" src="assets/obrazky/slovakias.jpeg" alt="">
+                    <span class="giga-text T-biely">Slovensko</span>
+                    <p class="M-text T-biely">nezname</p>
+                    <a class="M-text T-biely" id="" href="#">Čítať viac</a>
+                </div>
+                <div class="clanok dis-jus-alig-flex">
+                    <img class="img" src="assets/obrazky/francuzko.jpeg" alt="">
+                    <span class="giga-text T-biely">Francúzko</span>
+                    <p class="M-text T-biely">nezname</p>
+                    <a class='M-text T-biely' href="#">Čítať viac</a>
+                </div>
+                <div class="clanok dis-jus-alig-flex">
+                    <img class="img" src="assets/obrazky/grecko.jpeg" alt="">
+                    <span class="giga-text T-biely">Grécko</span>
+                    <p class="M-text T-biely">Corfu Atény</p>
+                    <a class='M-text T-biely' href="#">Čítať viac</a>
+                </div>
+                <div class="clanok dis-jus-alig-flex">
+                    <img class="img" src="assets/obrazky/IMG_8079.jpeg" alt="">
+                    <span class="giga-text T-biely">Rakusko</span>
+                    <p class="M-text T-biely">nezname</p>
+                    <a class='M-text T-biely' href="#">Čítať viac</a>
+                </div>
+                <div class="clanok dis-jus-alig-flex">
+                    <img class="img" src="assets/obrazky/IMG_5638.jpeg" alt="">
+                    <span class="giga-text T-biely">Česko</span>
+                    <p class="M-text T-biely">nezname</p>
+                    <a class='M-text T-biely' href="#">Čítať viac</a>
+                </div>
+                <div class="clanok dis-jus-alig-flex">
+                    <img class="img" src="assets/obrazky/anglicko.jpeg" alt="">
+                    <span class="giga-text T-biely">Anglicko</span>
+                    <p class="M-text T-biely">Santa Pod - raceway</p>
+                    <a class='M-text T-biely' href="#">Čítať viac</a>
+                </div>
+                <div class="clanok dis-jus-alig-flex">
+                    <img class="img" src="assets/obrazky/slovakias.jpeg" alt="">
+                    <span class="giga-text T-biely">Slovensko</span>
+                    <p class="M-text T-biely">nezname</p>
+                    <a class='M-text T-biely' href="#">Čítať viac</a>
+                </div>
+            </div>
+        </div>
+        <!-- ||||||||||||||||||| slider |||||||||||||||||||| -->
+         <!-- ||||||||||||||||||| najnovsie |||||||||||||||||||| -->
+        <div class="n-d-t dis-jus-alig-flex">
+            <span id="naj-d-h" class="V-text">Najnovšie Destinácie</span>
+        </div>
+         <!-- ||||||||||||||||||| ↓ jeden clanok ↓ |||||||||||||||||||| -->
+        <div class="naj-d-c dis-jus-alig-flex">
+            <img src="assets/obrazky/James T_.gif" alt="">
+            <span class="V-text pad-block">" Wafer candy canes gingerbread "</span>
+            <p class="M-text cen-text pad-block">Danish lemon drops gummi bears cheesecake jelly beans dessert macaroon dragée. Cake pastry fruitcake topping carrot cake jelly candy canes. Tiramisu shortbread cheesecake chocolate cake toffee muffin.</p>
+            <button class="b-t">čítať dalej</button>
+        </div>
+        <!-- ||||||||||||||||||| najnovsie |||||||||||||||||||| -->
+        <!-- ||||||||||||||||||| vsetky |||||||||||||||||||| -->
+        <div class="n-d-t dis-jus-alig-flex">
+            <span id="vse-d-h" class="V-text">Všetky Destinacie</span>
+        </div>
+        <div class="vse-kon dis-jus-alig-row">
+            <fieldset class="vse-f">
+                <legend class="V-text">Krajina</legend>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+            </fieldset>
+            <fieldset class="vse-f">
+                <legend class="V-text">Krajina</legend>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+            </fieldset>
+            <fieldset class="vse-f">
+                <legend class="V-text">Krajina</legend>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+            </fieldset>
+            <fieldset class="vse-f">
+                <legend class="V-text">Krajina</legend>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+            </fieldset>
+            <fieldset class="vse-f">
+                <legend class="V-text">Krajina</legend>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+            </fieldset>
+            <fieldset class="vse-f">
+                <legend class="V-text">Krajina</legend>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+                <span class="mini-text">Malogo - visne hruzsne</span>
+            </fieldset>
+        </div>
+        <!-- ||||||||||||||||||| vsetky |||||||||||||||||||| -->
+        <div class="n-d-t dis-jus-alig-flex">
+            <span id="vse-d-h" class="V-text">O mne</span>
+        </div>
+         <!-- ||||||||||||||||||| o mne |||||||||||||||||||| -->
+
+          <!-- ||||||||||||||||||| o mne |||||||||||||||||||| -->
+    </div>
+    <script src="assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
