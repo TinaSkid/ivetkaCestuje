@@ -75,7 +75,7 @@ function posun() {
     }
 }
 function start() {
-    auto = setInterval(posun, 1000); // 0xFA0 - 4000
+    auto = setInterval(posun, 2500); // 0xFA0 - 4000
     for (let i = 0; i <= 5; i++){
         b_P = document.querySelector('.b-' + i);
         b_P.style.backgroundColor = "rgba(255, 255, 255, 0.5)";
